@@ -1,0 +1,509 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,600;1,900&display=swap');
+@import url('https://rsms.me/inter/inter.css'); */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Space+Grotesk&display=swap');
+
+
+/* html {
+  font-family: 'Inter', sans-serif;
+}
+@supports (font-variation-settings: normal) {
+  html {
+    font-family: 'Inter var', sans-serif;
+  }
+} */
+
+* {
+  box-sizing: border-box;
+}
+
+
+
+
+html,
+body,
+#root,
+#main {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  user-select: none;
+  z-index: 1;
+  color: black;
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* body {
+ 
+  font-family: 'Inter', sans-serif;
+} */
+/* html, body, #root,
+ canvas {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+  z-index: 1;
+  color: black;
+} */
+
+
+
+@keyframes FadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+  
+}
+
+
+
+
+.header {
+  position: sticky;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: transparent;
+  padding: 20px;
+  width: 1250px;
+  /* margin: 0 auto; */
+ 
+}
+
+.header__brand {
+  padding-left: 70px;
+  font-size: 0.8rem;
+   /* font-size: 24px; */
+    font-weight: bold;
+    /* color: #333; */
+    text-decoration: none;
+}
+
+.header__menu ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  right: 0;
+}
+
+.header__menu li {
+  margin-right: 20px;
+}
+
+.header__menu li:last-child {
+  margin-right: 0;
+}
+
+.header__menu a {
+  color: #000000;
+  text-decoration: none;
+  font-size: 1.1rem;
+  margin-right: 20px;
+  cursor: pointer;
+  
+}
+
+
+
+
+.HeroDescription {
+  position: relative;
+  top: 0;
+  left: 40px;
+  /* margin: 40px; */
+  padding: 40px;
+  padding-left: 90px;
+  width: 500px;
+  height: 600px;
+  text-align: left;
+  font-size: 1.7rem;
+  animation: FadeIn 4s;
+
+
+}
+
+
+
+.HeroPara {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  
+}
+
+.HeroTitle{
+  font-size: 55px;
+  margin-top: 20px;
+  margin-bottom: 23px;
+}
+
+
+
+.PowerSection {
+  position: relative;
+}
+
+.PowerDescription {
+  position: relative;
+  top: 0;
+  left: 700px;
+  /* margin: 40px; */
+  padding: 40px;
+  padding-left: 90px;
+  width: 500px;
+  height: 260px;
+  text-align: left;
+  font-size: 1.7rem;
+  animation: FadeIn 5s;
+
+
+}
+
+
+
+.PowerPara {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  
+}
+
+.power-slogan{
+  font-size: 90px;
+  margin-top: 20px;
+  margin-bottom: 23px;
+}
+
+.IconContainer {
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* align-items: center; */
+  background-color: transparent;
+  padding-left: 120px;
+  top: 200px;
+  margin: 0;
+  
+  width: 150px;
+  height: 150px;
+  z-index: 5;
+  position: relative;
+}
+
+img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 90px;
+}
+
+
+.CustomDescription {
+  position: relative;
+  top: 444px;
+  left: 20px;
+  /* margin: 40px; */
+  padding: 40px;
+  padding-left: 90px;
+  width: 500px;
+  height: 600px;
+  text-align: left;
+  font-size: 1.7rem;
+  animation: FadeIn 7s;
+}
+
+
+.CustomPara {
+  margin-bottom: 40px;
+  padding: 0;
+  font-size: 18px;
+  
+}
+
+.CustomTitle{
+  font-size: 30px;
+  margin-top: 20px;
+  margin-bottom: 23px;
+}
+
+.materialBody {
+  font-size: 20px;
+  margin-right: 20px;
+  margin-bottom: 0;
+  margin-top: 0;
+  padding: 0;
+  /* margin-top: 20px;
+  margin-bottom: 23px;  */
+}
+
+.createbutt {
+  width: 200px;
+  height: 70px;
+  font-size: 20px;
+}
+
+
+
+.buttContainer {
+  position: absolute;
+  width: 1000px;
+  height: 600px;
+  font-size: 20px;
+  padding: 50px;
+  z-index: 77;
+}
+
+.exitButt {
+  position: relative;
+  top: 30px;
+  left: 555px;
+  width: 100px;
+  height: 60px;
+  font-size: 15px;
+}
+
+.customizer {
+  /* display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  width: 100%; */
+  /* margin-bottom: 25px; */
+  position: relative;
+  /* display: flex; */
+  /* gap: 10px; */
+  /* margin-bottom: 20px; */
+  margin: 0;
+  top: 460px;
+  left: 480px;
+}
+
+.customizer span {
+  font-size: 0.8rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.customizer span svg {
+  width: 24px;
+  padding-right: 5px;
+}
+
+
+.picker {
+  position: absolute !important;
+  bottom: 4em;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 120px !important;
+  height: 120px !important;
+}
+
+.color-options {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 60px;
+  top: 10px;
+  left: 0;
+  z-index: 50;
+}
+
+.circle {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 2px solid white;
+  transition: transform 0.6s cubic-bezier(0.85, 0, 0.15, 1);
+}
+
+.circle:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+
+
+
+@media screen and (max-width: 600px) {
+  *{
+    text-align: center;
+  }
+  
+  canvas {
+    width: 400px;
+    height: 600px;
+  }
+
+
+  .header__brand {
+   
+    padding-left: 111px;
+    font-size: 0.6rem;
+    text-align: center;
+  }
+
+  .HeroDescription {
+
+    margin: 0;
+    padding: 0;
+    padding-right: 190px;
+ 
+  }
+
+  .HeroPara {
+  
+    font-size: 15px;
+    
+  }
+  
+  .HeroTitle{
+    font-size: 35px;
+    text-align: center;
+ 
+  }
+  
+  
+  .PowerDescription {
+    position: relative;
+    top: 0;
+    left: 0px;
+    padding: 20px;
+    padding-right: 150px;
+  }
+  
+  
+  
+  .PowerPara {
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+    
+  }
+  
+  .power-slogan{
+    font-size: 50px;
+
+  }
+  
+  .IconContainer {
+  
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+    padding: 0;
+    top: 444px;
+    left: 50px;
+    margin: 0;
+    
+  }
+  
+  img {
+    width: 50px;
+    height: 50px;
+    margin-right: 75px;
+  }
+
+
+
+
+  .CustomDescription {
+    margin: 0;
+    padding: 20px;
+    padding-right: 150px;
+    top: 250px;
+    color: black;
+  
+  }
+  
+  
+  
+  .CustomPara {
+    margin-bottom: 40px;
+    padding: 0;
+    font-size: 15px;
+    
+  }
+  
+  .CustomTitle{
+    font-size: 30px;
+
+  }
+  
+  .createbutt {
+    width: 100px;
+    height: 40px;
+    font-size: 13px;
+    align-items: center;
+    margin-left: 120px;
+  }
+
+  
+
+
+  .buttContainer {
+    
+  margin: 0;
+  padding: 0;
+
+  }
+  
+  .exitButt {
+    
+    top: 20px;
+    left: 20px;
+    position: absolute;
+    width: 80px;
+    height: 40px;
+
+  }
+.materialBody {
+  font-size: 15px;
+}
+
+
+.Loader {
+  color: black;
+}
+
+
+
+
+
+  .section--container {
+    margin-left: 15vw;
+  }
+
+  .section--container h1 {
+    font-size: 8rem;
+    letter-spacing: -6px;
+    line-height: 6rem;
+  }
+
+  .color-options {
+    margin-bottom: 10px;
+    margin-left: 40px;
+    flex-direction: row;
+    position: relative;
+    top: 90%;
+    right: 40px;
+    transform: translateY(-50%);
+    
+  }
+
+  .support--content {
+    top: -10%;
+    left: 0;
+  }
+}
