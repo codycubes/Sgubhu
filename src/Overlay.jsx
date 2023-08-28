@@ -5,16 +5,11 @@ import {   motion, useAnimation } from "framer-motion";
 
 export const Overlay = ({onClick}) => {
 
-
-
     return(
         <>
         <Scroll html>
           <Header />
 
-          {/* <motion.section className="HeroSection"
-        >
-            */}
             <motion.div className="HeroDescription"
               initial={{opacity: 0, y: 25,}}
               whileInView={{opacity: 1, y: 0,}}
@@ -27,12 +22,6 @@ export const Overlay = ({onClick}) => {
                 </p>
             </motion.div>
            
-          {/* </motion.section> */}
-
-
-          {/* <motion.section className="PowerSection"
-    > */}
-          {/* <Fade right duration={2000}> */}
           <motion.div className="IconContainer" 
             initial={{opacity: 0, y: 25,}}
             whileInView={{opacity: 1, y: 0,}}
@@ -55,14 +44,7 @@ export const Overlay = ({onClick}) => {
                 you can seamlessly connect to any device and enjoy high-quality audio wherever you go.
                 </p>  
          </motion.div>
-         {/* </Fade> */}
-          {/* </motion.section> */}
 
-
-{/* 
-          <motion.section className="CustomizeSection"
-       > */}
-          {/* <Fade bottom duration={2000}> */}
             <motion.div className="CustomDescription"
               initial={{opacity: 0, y: 25,}}
               whileInView={{opacity: 1, y: 0,}}
@@ -72,8 +54,6 @@ export const Overlay = ({onClick}) => {
                 <button className="createbutt" onClick={onClick}>Create</button>
                 
             </motion.div>
-            {/* </Fade> */}
-          {/* </motion.section> */}
 
 
         </Scroll>

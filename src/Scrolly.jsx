@@ -1,13 +1,11 @@
 import React, {useState, Suspense} from "react";
 import { Canvas } from '@react-three/fiber'
-// import { Sgubhu } from './SgubhuModel'
-// import { Sgubhu2 } from "./SgubhuModel2";
 import { Sgubhu3 } from "./SgubhuModel3";
 import { Environment, ContactShadows, OrbitControls, ScrollControls, Html, useProgress, MeshReflectorMaterial, Instances,
   Instance, Float } from '@react-three/drei'
 import { Overlay } from './Overlay'
 import { Customize, Customizer } from "./Customize"; 
-import AudioVisualizer from "./AudioViz";
+
 
 export const Scrolly = ({spheres}) => {
 
@@ -55,19 +53,6 @@ export const Scrolly = ({spheres}) => {
 
             </ScrollControls>
 
-            {/* <Instances renderOrder={-1000}>
-              <sphereGeometry args={[0.1, 64, 64]} />
-              <meshBasicMaterial depthTest={false} />
-              {spheres.map(([scale, color, speed, position], index) => (
-                <Sphere key={index} scale={scale} color={color} speed={speed} position={position} />
-          ))}
-        </Instances> */}
-          
-            {/* <Float>
-            <AudioVisualizer audioSrc="/WL4OM.mp3" />
-            </Float> */}
-          
-            {/* <OrbitControls /> */}
 
             </Suspense>
         </Canvas>
@@ -90,10 +75,3 @@ function Loader() {
 }
 
 
-// function Sphere({ position, scale = 1, speed = 0.1, color = 'white' }) {
-//   return (
-//     <Float rotationIntensity={40} floatIntensity={20} speed={speed / 2}>
-//       <Instance position={position} scale={scale} color={color} />
-//     </Float>
-//   )
-// }

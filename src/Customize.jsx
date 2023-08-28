@@ -10,8 +10,7 @@ export const Customize = ({onClick}) => {
     
     return(
         <>
-        {/* <PerspectiveCamera  position={[-0.64, 0.35, 2.72]}
-          rotation={[0.06, -0.09, 0.01]} /> */}
+
         <Scroll html>
         
             <div className="buttContainer">
@@ -31,10 +30,7 @@ export function Customizer() {
 
     return (
         <>
-       {/* <div className="customizer"> */}
     
-     
-
         <div className="color-options"> 
         <h1 className="materialBody">Body</h1>  
           {snap.colors.map((color) => (
@@ -52,17 +48,7 @@ export function Customizer() {
           ))}
         </div>
 
-{/* 
-        <div className="color-options"> 
-        <h1 className="materialBody">Woofer</h1>  
-          {snap.Woofer.map((woofer) => (
-            <div key={woofer} className={`circle`}  style={{ background: woofer }}  onClick={() => (state.woofer = woofer)}>      
-            </div>
-          ))}
-        </div> */}
-    
-      
-      {/* </div>   */}
+
     </>
     )
 }
